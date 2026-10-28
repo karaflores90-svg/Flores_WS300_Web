@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage & Strength | Fitness & Wellness</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">SAGE & STRENGTH</a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#programs">Programs</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-btn">BOOK A CONSULT</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- SECTION 1: HOME -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Elevate Your Well-being.<br>
+                Cultivate Strength.
+            </h1>
+
+            <p>
+                Luxury fitness crafted for a stronger you.
+                Where movement meets intention.
+            </p>
+
+            <a href="#about" class="btn">LEARN MORE</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 2: ABOUT -->
+    <section id="about" class="about section">
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="images/aboutpic.jpg" alt="Woman practicing fitness">
+            </div>
+
+            <div class="about-content">
+
+                <h2>The Method</h2>
+
+                <p>
+                    We believe in creating a balanced approach to
+                    fitness and wellness. Our method combines
+                    mindful movement, strength training, and
+                    personalized guidance to help you become
+                    the best version of yourself.
+                </p>
+
+                <ul>
+                    <li>Highly qualified fitness instructors.</li>
+                    <li>Personalized wellness programs.</li>
+                    <li>Focus on both physical and mental wellness.</li>
+                    <li>Supportive and welcoming community.</li>
+                </ul>
+
+                <a href="#programs" class="btn">OUR PROGRAMS</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 3: PROGRAMS -->
+    <section id="programs" class="programs section">
+
+        <div class="section-heading">
+            <h2>Signature Programs</h2>
+        </div>
+
+        <div class="program-container">
+
+            <!-- CARD 1 -->
+            <div class="program-card">
+
+                <div class="card-inner">
+
+                    <div class="program-icon">✦</div>
+
+                    <h3>Fitness Program</h3>
+
+                    <p>
+                        Build strength and confidence through
+                        personalized fitness sessions designed
+                        to support your health and lifestyle.
+                    </p>
+
+                    <button class="btn program-btn" data-program="fitness">
+                        LEARN MORE
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="program-card">
+
+                <div class="card-inner">
+
+                    <div class="program-icon">✧</div>
+
+                    <h3>Signature Program</h3>
+
+                    <p>
+                        Experience a combination of mindful
+                        movement, strength training, and
+                        wellness practices designed for you.
+                    </p>
+
+                    <button class="btn program-btn" data-program="signature">
+                        LEARN MORE
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="program-card">
+
+                <div class="card-inner">
+
+                    <div class="program-icon">❀</div>
+
+                    <h3>Elegant Program</h3>
+
+                    <p>
+                        Discover a gentle approach to fitness
+                        through graceful movement, flexibility,
+                        and relaxation exercises.
+                    </p>
+
+                    <button class="btn program-btn" data-program="elegant">
+                        LEARN MORE
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 4: TESTIMONIALS -->
+    <section id="testimonials" class="testimonials section">
+
+        <div class="section-heading">
+            <h2>Client Stories</h2>
+        </div>
+
+        <div class="testimonial-container">
+
+            <button class="slider-btn prev" id="prevBtn" aria-label="Previous testimonial">
+                &#10094;
+            </button>
+
+            <div class="testimonial-image">
+
+                <img id="testimonialImg" src="images/testimonials1.jpg" alt="Fitness client">
+
+            </div>
+
+            <div class="testimonial-content">
+
+                <span class="quote-icon">“</span>
+
+                <p id="testimonialText">
+                    I was searching for a way to reconnect
+                    with myself, and Sage & Strength gave me
+                    exactly what I needed. The experience
+                    has truly transformed my lifestyle.
+                </p>
+
+                <h4 id="testimonialName">— Sofia Bennett</h4>
+
+                <span id="testimonialRole">Wellness Client</span>
+
+            </div>
+
+            <div class="testimonial-image second-image">
+
+                <img id="testimonialImg2" src="/images/testimonial2.jpg" alt="Woman practicing yoga">
+
+            </div>
+
+            <button class="slider-btn next" id="nextBtn" aria-label="Next testimonial">
+                &#10095;
+            </button>
+
+        </div>
+
+        <div class="slider-dots" id="sliderDots"></div>
+
+    </section>
+
+
+    <!-- SECTION 5: CONTACT -->
+    <section id="contact" class="contact section">
+
+        <div class="contact-content">
+
+            <h2>Join the Community</h2>
+
+            <p>
+                Sign up to receive our latest wellness news,
+                exclusive fitness tips, and inspiring updates.
+            </p>
+
+            <form id="subscribeForm" class="subscribe-form">
+
+                <input type="email" id="email" placeholder="Email address" aria-label="Email address" required>
+
+                <button type="submit" class="btn">
+                    SIGN UP
+                </button>
+
+            </form>
+
+            <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h3>SAGE & STRENGTH</h3>
+
+        <p>
+            Movement. Balance. Strength.
+        </p>
+
+        <p class="copyright">
+            © 2026 Sage & Strength. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- PROGRAM MODAL -->
+    <div class="modal" id="programModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal" aria-label="Close program details">
+                &times;
+            </button>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <a href="#contact" class="btn" id="modalContact">
+                JOIN NOW
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
